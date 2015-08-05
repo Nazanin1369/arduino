@@ -1,0 +1,15 @@
+{
+  "name": "arduino",
+  "version": "1.0.0",
+  "description": "My first arduino",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Arduino node bot"
+  },
+  "author": "Nazanin",
+  "license": "ISC"
+}
