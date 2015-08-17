@@ -6,3 +6,6 @@ This project contains various functions working with arduino UNO board using Nod
 
 ### 2- flowingLed.js
  @description uses LEDs to create flowing LED lights. As the name implies, these flowing lights are made up of eight LEDs in a row which successively light up and dim one after another like flowing water. 
+
+### 3- buzzer.js
+ @description uses a buzzer to make some noise. First with traditional way by defining notes and then by using **j5-songs** library.
