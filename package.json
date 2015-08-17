@@ -13,6 +13,8 @@
   "author": "Nazanin",
   "license": "ISC",
   "devDependencies": {
+    "edison-io": "^0.8.18",
+    "j5-songs": "0.0.7",
     "johnny-five": "^0.8.86"
   }
 }
