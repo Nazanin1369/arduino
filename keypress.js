@@ -13,7 +13,7 @@ myBoard.on("ready", function() {
     });
     
     key.on("low", function(e){
-       console.log("low event captured!")
+      console.log("low event captured!")
       led.off();
     });
  

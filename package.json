@@ -11,5 +11,8 @@
     "url": "Arduino node bot"
   },
   "author": "Nazanin",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "johnny-five": "^0.8.86"
+  }
 }
