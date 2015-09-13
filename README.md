@@ -11,7 +11,7 @@ This project contains various functions working with arduino UNO board using Nod
  @description uses a buzzer to make some noise. First with traditional way by defining notes and then by using **j5-songs** library.
 
 ### 4- photocell.js
-	@description A photoresistor or light-dependent resistor (LDR) or photocell is a light-controlled variable resistor. The resistance of a photoresistor decreases with increasing incident light intensity; in other words, it exhibits photoconductivity. A photoresistor can be applied in light-sensitive detector circuits, and light- and dark-activated switching circuits.
+description A photoresistor or light-dependent resistor (LDR) or photocell is a light-controlled variable resistor. The resistance of a photoresistor decreases with increasing incident light intensity; in other words, it exhibits photoconductivity. A photoresistor can be applied in light-sensitive detector circuits, and light- and dark-activated switching circuits.
  	The resistance of the photoresistor changes with incident light intensity. If the incident light intensity is high, the resistance reduces; if low, increases.
 	In this experiment, 
 	we will use eight LEDs to indicate light intensity. The higher the light intensity is, the more the LED is lit. When the light intensity is high enough, all the LEDs will be lit. When there is no light, all the LEDs will go out.
