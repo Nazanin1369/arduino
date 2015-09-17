@@ -15,3 +15,20 @@ This project contains various functions working with arduino UNO board using Nod
  	The resistance of the photoresistor changes with incident light intensity. If the incident light intensity is high, the resistance reduces; if low, increases.
 	In this experiment, 
 	we will use eight LEDs to indicate light intensity. The higher the light intensity is, the more the LED is lit. When the light intensity is high enough, all the LEDs will be lit. When there is no light, all the LEDs will go out.
+
+### 5- RGB LED
+RGB stands for the red, green, and blue color channels and is an industry color standard. RGB displays various new colors by changing the three channels and superimposing them, which, according to statistics, can create 16,777,216 different colors. If you say the color displayed doesn’t completely match a natural color, then it almost certainly cannot be differentiated with the naked eye.
+
+This file has "index.html" which runs a control panel on your browser which you can change your LED color on the Arduino board by picking a color from a color picker. It leverages "johnny-five" and "socket.io".
+
+In order to run tou have to first run any server , I used ["http_server"](https://www.npmjs.com/package/http-server): 
+		http-server start
+			Starting up http-server, serving ./ on: http://0.0.0.0:8080
+			Hit CTRL-C to stop the server
+
+Then you have to run the server side which is the _rgbLed.js_ file: 
+		node rgbLed.js
+
+Do not forget to connect your Arduino board.
+	
+
