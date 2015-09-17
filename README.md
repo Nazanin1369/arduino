@@ -21,6 +21,8 @@ RGB stands for the red, green, and blue color channels and is an industry color 
 
 This file has "index.html" which runs a control panel on your browser which you can change your LED color on the Arduino board by picking a color from a color picker. It leverages "johnny-five" and "socket.io".
 
+View it online here - > http://nazanin1369.github.io/arduino/
+
 #### To run: 
 1- run any server , I used ["http_server"](https://www.npmjs.com/package/http-server): 
 
