@@ -11,7 +11,6 @@ five.Board().on("ready", function(){
 	io.sockets.on("connection", function(socket) {
         console.log("New connection: " + socket.id);
         socket.on("changeColor", function(color) {
-
             console.log("Changing color: " + color);
             led.color(color)
         });
