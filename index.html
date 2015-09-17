@@ -21,7 +21,7 @@
 				border: none!important;
 			}
 		</style>
-			<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+			<link rel="stylesheet" href="vendor/bootstrap.min.css" />
 	</head>
 	<body>
 		<div class="container flex">
@@ -65,8 +65,8 @@
 
 		<!-- Do not forget to eventually change your Socket.io server settings -->
 		<script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
-		<script src="bower_components/jquery/dist/jquery.min.js"></script>
-		<script src="bower_components/jquery-simple-color/jquery.simple-color.min.js"></script>
+		<script src="vendor/jquery.min.js"></script>
+		<script src="vendor/jquery.simple-color.min.js"></script>
 		<script>
 			var socket = io.connect('//0.0.0.0:8080');
 			$('.simple_color_kitchen_sink').simpleColor({
