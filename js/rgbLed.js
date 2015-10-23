@@ -8,13 +8,13 @@ five.Board().on("ready", function(){
 	//Initialized RGB LED
 	right_eye = new five.Led.RGB([9, 10, 11]);
     left_eye = new five.Led.RGB([3, 5, 6]);
+    //Initialized Servo
     legs = new five.Servo({
          pin: 7
     });
 
-     legs.sweep();
-    //this.repl.inject({ led: right_eye });
-    //this.repl.inject({ led: left_eye });
+    //moves the servo
+    legs.sweep();
 
 	io.sockets.on("connection", function(socket) {
         console.log("New connection: " + socket.id);
@@ -27,7 +27,7 @@ five.Board().on("ready", function(){
             left_eye.color(color);
         });
     });
-
+    
 	right_eye.on();
     left_eye.on();
 
