@@ -34,7 +34,7 @@
 				<div class="jumbotron">
 					<div class="flex-container">
 						<div class="row">
-							<div class="col-xs-8 col-md-6" style="margin-top: 20px;">
+							<div class="col-xs-8 col-md-6" style="margin-top: 20px;min-width: 100%;">
 								<p class="lead"> This is a control panel which you can change your LED color on the Arduino board.
 								It leverages "johnny-five" and "socket.io". </p>
 								<p>RGB stands for the red, green, and blue color channels and is an industry color standard.
@@ -42,34 +42,31 @@
 									according to statistics, can create 16,777,216 different colors. If you say the color displayed doesn’t
 									completely match a natural color, then it almost certainly cannot be differentiated with the naked eye.   <p>
 								<p>In order to change color <mark>CLICK</mark> on the button below and choose a color: </p>
-								<div class="center" style="margin-top: 15px;">
-									<label>Click to change color:</label>
-									<input class='simple_color_kitchen_sink' value='#993300'/>
+								<div class="center row" style="margin-top: 15px;">
+									<div class="col-xs-6">
+										<label>Click to change right eye color:</label>
+										<input class='right_eye_color' value='#993300'/>
+									</div>
+									<div class="col-xs-6">
+										<label>Click to change left eye color:</label>
+										<input class='left_eye_color' value='#993300'/>
+									</div>
+
 								</div>
 							</div>
-  						<div class="col-xs-10 col-md-6" >
-								<a href="#" class="thumbnail">
-		      				<img src="led.jpg" alt="arduino" style="height: 610px;">
-		    				</a>
-							</div>
-
-						</div>
 					</div>
-				</div>
-				<div class="jumbotron">
-						© 2015 Nazanin Delam
 				</div>
 			</div>
   	</div>
 
 
 		<!-- Do not forget to eventually change your Socket.io server settings -->
-		<script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
+		<script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>
 		<script src="vendor/jquery.min.js"></script>
 		<script src="vendor/jquery.simple-color.min.js"></script>
 		<script>
-			var socket = io.connect('//0.0.0.0:8080');
-			$('.simple_color_kitchen_sink').simpleColor({
+			var socket = io.connect('//0.0.0.0:8081');
+			$('.right_eye_color').simpleColor({
 		    boxHeight: 40,
 		    cellWidth: 20,
 		    cellHeight: 20,
@@ -78,7 +75,19 @@
 		    displayColorCode: true,
 		    livePreview: true,
 		    onSelect: function(hex, element) {
-						socket.emit("changeColor", hex);
+				socket.emit("changeRightEyeColor", hex);
+		    }
+		  });
+		  $('.left_eye_color').simpleColor({
+		    boxHeight: 40,
+		    cellWidth: 20,
+		    cellHeight: 20,
+		    chooserCSS: { 'border': '1px solid #660033' },
+		    displayCSS: { 'border': '1px solid red' },
+		    displayColorCode: true,
+		    livePreview: true,
+		    onSelect: function(hex, element) {
+				socket.emit("changeLeftEyeColor", hex);
 		    }
 		  });
 		</script>
