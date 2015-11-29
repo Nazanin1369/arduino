@@ -16,7 +16,7 @@ This project contains various functions working with arduino UNO board using Nod
 	In this experiment, 
 	we will use eight LEDs to indicate light intensity. The higher the light intensity is, the more the LED is lit. When the light intensity is high enough, all the LEDs will be lit. When there is no light, all the LEDs will go out.
 
-### 5- RGB LED
+### 5- RGB LED & Ultrasonic distance sensor
 
 This was an Halloween hack night one hour project. 
 * You can watch the video at [YouTube](https://youtu.be/ozgB9a5aAxk)
